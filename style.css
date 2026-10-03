@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
 /* RESET AND BASE STYLES */
 * {
@@ -9,13 +9,13 @@
 
 body {
   font-family: 'Playfair Display', serif;
-  background-color: #111;
-  color: #e8e0d0;
+  background-color: #0d0a0a;
+  color: #efe6e1;
   line-height: 1.8;
 }
 
 a {
-  color: #d4af37;
+  color: #a8182e;
   text-decoration: none;
 }
 
@@ -38,7 +38,7 @@ img {
 
 /* HEADER / NAVIGATION */
 header {
-  background-color: #111;
+  background-color: #0d0a0a;
   padding: 15px 0;
   position: sticky;
   top: 0;
@@ -53,15 +53,16 @@ nav {
 }
 
 .logo {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem;
-  font-weight: 900;
-  color: #d4af37;
-  letter-spacing: 1px;
+  font-weight: 700;
+  color: #a8182e;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .logo span {
-  color: #e8e0d0;
+  color: #efe6e1;
 }
 
 .nav-links {
@@ -71,8 +72,8 @@ nav {
 }
 
 .nav-links a {
-  font-family: 'Poppins', sans-serif;
-  color: #e8e0d0;
+  font-family: 'Cormorant Garamond', serif;
+  color: #efe6e1;
   font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 1.5px;
@@ -83,14 +84,14 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #d4af37;
+  color: #c4223c;
 }
 
 /* HERO SECTION */
 .hero {
   text-align: center;
   padding: 100px 0;
-  background: linear-gradient(135deg, #111 0%, #222 50%, #111 100%);
+  background: linear-gradient(135deg, #0d0a0a 0%, #1a1213 50%, #0d0a0a 100%);
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -99,10 +100,10 @@ nav {
 }
 
 .hero h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 4.5rem;
-  font-weight: 900;
-  color: #d4af37;
+  font-weight: 700;
+  color: #a8182e;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 30px;
@@ -113,7 +114,7 @@ nav {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
   margin-bottom: 25px;
-  color: #e8e0d0;
+  color: #efe6e1;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -122,12 +123,12 @@ nav {
 /* BUTTONS */
 .btn {
   display: inline-block;
-  background-color: #d4af37;
-  color: #111;
+  background-color: #a8182e;
+  color: #efe6e1;
   padding: 16px 36px;
   border: none;
   border-radius: 50px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
@@ -138,7 +139,7 @@ nav {
 }
 
 .btn:hover {
-  background-color: #f4d03f;
+  background-color: #c4223c;
   transform: translateY(-2px);
 }
 
@@ -146,11 +147,11 @@ nav {
 .btn-outline {
   display: inline-block;
   background-color: transparent;
-  color: #d4af37;
+  color: #a8182e;
   padding: 14px 32px;
-  border: 2px solid #d4af37;
+  border: 2px solid #a8182e;
   border-radius: 50px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
@@ -161,8 +162,8 @@ nav {
 }
 
 .btn-outline:hover {
-  background-color: #d4af37;
-  color: #111;
+  background-color: #a8182e;
+  color: #efe6e1;
   transform: translateY(-2px);
 }
 
@@ -174,10 +175,10 @@ section {
 section h2 {
   text-align: center;
   margin-bottom: 50px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 2.8rem;
-  font-weight: 900;
-  color: #d4af37;
+  font-weight: 700;
+  color: #a8182e;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -190,11 +191,11 @@ section h2 {
 }
 
 .gallery-item {
-  background-color: #222;
+  background-color: #1a1213;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s;
-  border: 1px solid #333;
+  border: 1px solid #3a2a2d;
 }
 
 .gallery-item:hover {
@@ -211,10 +212,10 @@ section h2 {
 .gallery-item p {
   padding: 20px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
-  color: #d4af37;
-  background-color: #1a1a1a;
+  color: #a8182e;
+  background-color: #0d0a0a;
   margin: 0;
   font-size: 1rem;
   text-transform: uppercase;
@@ -229,12 +230,12 @@ section h2 {
 }
 
 .artist-card {
-  background-color: #222;
+  background-color: #1a1213;
   border-radius: 16px;
   overflow: hidden;
   text-align: center;
   padding: 30px;
-  border: 1px solid #333;
+  border: 1px solid #3a2a2d;
   transition: transform 0.3s;
 }
 
@@ -248,13 +249,13 @@ section h2 {
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto 25px;
-  border: 3px solid #d4af37;
+  border: 3px solid #a8182e;
 }
 
 .artist-name {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 1.4rem;
-  color: #d4af37;
+  color: #a8182e;
   margin-bottom: 8px;
   font-weight: 700;
   text-transform: uppercase;
@@ -262,8 +263,8 @@ section h2 {
 }
 
 .artist-specialty {
-  font-family: 'Poppins', sans-serif;
-  color: #e8e0d0;
+  font-family: 'Cormorant Garamond', serif;
+  color: #c9a0a6;
   font-weight: 600;
   margin-bottom: 20px;
   font-size: 0.95rem;
@@ -271,7 +272,7 @@ section h2 {
 
 .artist-bio {
   font-family: 'Playfair Display', serif;
-  color: #b5b5b5;
+  color: #c9a0a6;
   line-height: 1.9;
   font-size: 1rem;
 }
@@ -286,8 +287,8 @@ section h2 {
 }
 
 .contact-info h3 {
-  font-family: 'Poppins', sans-serif;
-  color: #d4af37;
+  font-family: 'Cormorant Garamond', serif;
+  color: #a8182e;
   margin-bottom: 20px;
   font-size: 1.3rem;
   font-weight: 700;
@@ -295,7 +296,7 @@ section h2 {
 
 .contact-info p {
   font-family: 'Playfair Display', serif;
-  color: #e8e0d0;
+  color: #efe6e1;
   margin-bottom: 10px;
   font-size: 1rem;
 }
@@ -303,10 +304,10 @@ section h2 {
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #222;
+  background-color: #1a1213;
   padding: 40px;
   border-radius: 16px;
-  border: 1px solid #333;
+  border: 1px solid #3a2a2d;
 }
 
 .form-group {
@@ -316,8 +317,8 @@ section h2 {
 .form-group label {
   display: block;
   margin-bottom: 12px;
-  color: #d4af37;
-  font-family: 'Poppins', sans-serif;
+  color: #a8182e;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
   font-size: 1rem;
 }
@@ -326,10 +327,10 @@ section h2 {
 .form-group textarea {
   width: 100%;
   padding: 16px;
-  background-color: #1a1a1a;
-  border: 1px solid #444;
+  background-color: #0d0a0a;
+  border: 1px solid #3a2a2d;
   border-radius: 8px;
-  color: #e8e0d0;
+  color: #efe6e1;
   font-family: 'Playfair Display', serif;
   font-size: 1rem;
 }
@@ -337,7 +338,7 @@ section h2 {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #d4af37;
+  border-color: #a8182e;
 }
 
 .form-group textarea {
@@ -348,13 +349,13 @@ section h2 {
 .form-message {
   text-align: center;
   padding: 25px;
-  background-color: #222;
+  background-color: #1a1213;
   border-radius: 12px;
   margin-top: 25px;
   display: none;
   font-family: 'Playfair Display', serif;
-  color: #e8e0d0;
-  border: 1px solid #333;
+  color: #efe6e1;
+  border: 1px solid #3a2a2d;
 }
 
 .form-message.show {
@@ -367,18 +368,18 @@ footer {
   padding: 40px 0;
   text-align: center;
   color: #888;
-  border-top: 1px solid #222;
+  border-top: 1px solid #3a2a2d;
 }
 
 .footer-content p {
   margin-bottom: 12px;
   font-family: 'Playfair Display', serif;
-  color: #b5b5b5;
+  color: #c9a0a6;
 }
 
 .footer-content .shop-name {
-  font-family: 'Poppins', sans-serif;
-  color: #d4af37;
+  font-family: 'Cormorant Garamond', serif;
+  color: #a8182e;
   font-weight: 700;
   font-size: 1.2rem;
   text-transform: uppercase;
