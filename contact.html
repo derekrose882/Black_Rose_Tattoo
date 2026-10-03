@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Rose Tattoo | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Black <span>Rose</span> Tattoo</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="container">
+      <section>
+        <h2>Get In Touch</h2>
+
+        <div class="contact-info">
+          <div>
+            <h3>&#128378; Address</h3>
+            <p>123 Ink Street</p>
+            <p>Portland, OR 97201</p>
+          </div>
+          <div>
+            <h3>&#128222; Phone</h3>
+            <p>(555) 123-4567</p>
+          </div>
+          <div>
+            <h3>&#128337; Hours</h3>
+            <p>Tuesday - Saturday: 11am - 7pm</p>
+            <p>Sunday - Monday: Closed</p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h2>Book a Consultation</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+          <div id="formMessage" class="form-message">
+            Thanks, we'll be in touch!
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p class="shop-name">Black Rose Tattoo</p>
+        <p>Demo website - not a real business</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('formMessage').classList.add('show');
+    });
+  </script>
+</body>
+</html>
