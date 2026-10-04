@@ -11,3 +11,13 @@ python3 -m http.server 5000 --bind 0.0.0.0
 ```
 
 The other pages are `gallery.html`, `artists.html`, and `contact.html`.
+
+## Project structure
+
+- `index.html`, `gallery.html`, `artists.html`, `contact.html`: the pages
+- `style.css`: all styling; colors, fonts and spacing are CSS variables at the top (`:root`)
+- `script.js`: menu, scroll animations, gallery filter and lightbox, testimonials, live opening hours, booking form
+- `hero.webp`: compressed copy of `hero.png` (the PNG is kept as the fallback)
+- `favicon.svg`: browser tab icon
+
+No build step or dependencies; it's plain HTML, CSS and JavaScript.

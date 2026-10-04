@@ -1,5 +1,7 @@
 # Black Rose Tattoo — Redesign Plan
 
+> **Status:** implemented. See `style.css`, `script.js` and the four HTML pages.
+
 Goal: turn the site into a portfolio piece that looks like a premium, custom-built
 studio website to a non-technical small-business owner. Keep the existing
 images untouched and keep the black + deep-crimson identity, but make
@@ -207,9 +209,9 @@ template for other clients.
 ### 3.6 Global footer
 - Four columns: brand blurb and social icons · Quick links · Hours · Contact.
 - A big faded "BLACK ROSE" wordmark across the bottom as a background flourish.
-- Bottom bar: © year, "Demo website — not a real business" (smaller and
-  subtler), and **"Designed & built by [Your Business Name]"** linking to your
-  site. This turns the demo into lead generation for you.
+- Bottom bar: © year and "Demo website — not a real business" (smaller and
+  subtler). No agency credit on the page itself; the portfolio preview adds
+  its own header.
 
 ---
 
