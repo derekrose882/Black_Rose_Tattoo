@@ -3,86 +3,271 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Black Rose Tattoo | Contact</title>
+  <title>Contact & Booking | Black Rose Tattoo</title>
+  <meta name="description" content="Book a free tattoo consultation at Black Rose Tattoo, 123 Ink Street, Portland, OR. Open Tuesday to Saturday, 11am to 7pm. Walk-ins welcome.">
+  <meta name="theme-color" content="#0b0809">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Black Rose Tattoo">
+  <meta property="og:title" content="Contact & Booking | Black Rose Tattoo">
+  <meta property="og:description" content="Book a free tattoo consultation at Black Rose Tattoo, 123 Ink Street, Portland, OR. Open Tuesday to Saturday, 11am to 7pm. Walk-ins welcome.">
+  <meta property="og:image" content="hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
+  <script>document.documentElement.classList.add('js');</script>
+</head><body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
     <div class="container">
-      <nav>
-        <div class="logo">Black <span>Rose</span> Tattoo</div>
+      <a href="index.html" class="logo" aria-label="Black Rose Tattoo home">
+        <span class="logo__mark">Black <span>Rose</span></span>
+        <span class="logo__sub">Tattoo Studio</span>
+      </a>
+      <nav class="nav" aria-label="Main">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="artists.html">Artists</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
+        <a href="contact.html#book" class="btn btn--sm">Book Now</a>
       </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home <small>01</small></a></li>
+        <li><a href="gallery.html">Gallery <small>02</small></a></li>
+        <li><a href="artists.html">Artists <small>03</small></a></li>
+        <li><a href="contact.html" aria-current="page">Contact <small>04</small></a></li>
+      </ul>
+      <div class="mobile-menu__footer">
+        <a href="contact.html#book" class="btn btn--block">Book a Consultation</a>
+        <p>123 Ink Street, Portland, OR &nbsp;·&nbsp; <a href="tel:+15551234567">(555) 123-4567</a></p>
+      </div>
     </div>
   </header>
 
-  <main class="page-content">
-    <div class="container">
-      <section>
-        <h2>Get In Touch</h2>
+  <main id="main">
+    <section class="page-banner">
+      <div class="page-banner__media">
+        <picture>
+          <source srcset="hero.webp" type="image/webp">
+          <img src="hero.png" alt="" width="1746" height="901" style="object-position: 85% 60%;">
+        </picture>
+      </div>
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Contact</span>
+        </nav>
+        <h1 class="reveal" style="--d:.08s">Let&rsquo;s make <em>something</em> beautiful</h1>
+        <p class="reveal" style="--d:.16s">Book a free consultation, ask a question, or just stop by. Walk-ins are always welcome during open hours.</p>
+      </div>
+    </section>
 
-        <div class="contact-info">
-          <div>
-            <h3>&#128378; Address</h3>
-            <p>123 Ink Street</p>
-            <p>Portland, OR 97201</p>
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="info-stack">
+          <div class="info-card reveal">
+            <span class="info-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+            <div class="info-card__body">
+              <h3>Studio</h3>
+              <p>123 Ink Street<br>Portland, OR 97201</p>
+            </div>
           </div>
-          <div>
-            <h3>&#128222; Phone</h3>
-            <p>(555) 123-4567</p>
+          <div class="info-card reveal" style="--d:.06s">
+            <span class="info-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+            <div class="info-card__body">
+              <h3>Call or text</h3>
+              <a href="tel:+15551234567">(555) 123-4567</a>
+            </div>
           </div>
-          <div>
-            <h3>&#128337; Hours</h3>
-            <p>Tuesday - Saturday: 11am - 7pm</p>
-            <p>Sunday - Monday: Closed</p>
+          <div class="info-card reveal" style="--d:.12s">
+            <span class="info-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+            <div class="info-card__body">
+              <h3>Email</h3>
+              <a href="mailto:hello@blackrosetattoo.com">hello@blackrosetattoo.com</a>
+            </div>
+          </div>
+          <div class="info-card reveal" style="--d:.18s">
+            <span class="info-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div class="info-card__body">
+              <div class="hours-head">
+                <h3>Hours</h3>
+                <span class="status">Tue – Sat, 11am – 7pm</span>
+              </div>
+              <table class="hours">
+                <tr data-day="2"><td>Tuesday</td><td>11am – 7pm</td></tr>
+                <tr data-day="3"><td>Wednesday</td><td>11am – 7pm</td></tr>
+                <tr data-day="4"><td>Thursday</td><td>11am – 7pm</td></tr>
+                <tr data-day="5"><td>Friday</td><td>11am – 7pm</td></tr>
+                <tr data-day="6"><td>Saturday</td><td>11am – 7pm</td></tr>
+                <tr data-day="0" class="is-closed-day"><td>Sunday</td><td>Closed</td></tr>
+                <tr data-day="1" class="is-closed-day"><td>Monday</td><td>Closed</td></tr>
+              </table>
+            </div>
+          </div>
+          <div class="map reveal" style="--d:.24s">
+            <iframe title="Map showing Black Rose Tattoo in Portland, Oregon" loading="lazy"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-122.6950%2C45.5120%2C-122.6650%2C45.5280&amp;layer=mapnik"></iframe>
+            <span class="map__pin" aria-hidden="true"></span>
           </div>
         </div>
 
-        <div class="contact-form">
-          <h2>Book a Consultation</h2>
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required>
+        <div class="booking reveal" id="book" style="--d:.1s">
+          <span class="eyebrow">Free consultation</span>
+          <h2>Book your <em>session</em></h2>
+          <p>Tell us about your idea and we'll get back to you within one business day.</p>
+
+          <form id="bookingForm" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <input type="text" id="name" name="name" placeholder=" " autocomplete="name" required>
+                <label for="name">Full name</label>
+                <span class="field__error">Please enter your name.</span>
+              </div>
+              <div class="field">
+                <input type="email" id="email" name="email" placeholder=" " autocomplete="email" required>
+                <label for="email">Email</label>
+                <span class="field__error">Please enter a valid email.</span>
+              </div>
+              <div class="field">
+                <input type="tel" id="phone" name="phone" placeholder=" " autocomplete="tel">
+                <label for="phone">Phone (optional)</label>
+              </div>
+              <div class="field">
+                <select id="artist" name="artist">
+                  <option value="any">No preference</option>
+                  <option value="alex">Alex Carter</option>
+                  <option value="jamie">Jamie Rivera</option>
+                  <option value="ryan">Ryan Cole</option>
+                </select>
+                <label for="artist">Preferred artist</label>
+              </div>
+              <div class="field">
+                <select id="style" name="style" required>
+                  <option value="" disabled selected>Choose a style</option>
+                  <option>Fine Line</option>
+                  <option>Traditional</option>
+                  <option>Realism</option>
+                  <option>Watercolor</option>
+                  <option>Geometric</option>
+                  <option>Blackwork</option>
+                  <option>Portrait</option>
+                  <option>Floral</option>
+                  <option>Japanese</option>
+                  <option>Not sure yet</option>
+                </select>
+                <label for="style">Tattoo style</label>
+                <span class="field__error">Please choose a style.</span>
+              </div>
+              <div class="field">
+                <select id="size" name="size">
+                  <option>Small (under 3")</option>
+                  <option>Medium (3&ndash;6")</option>
+                  <option>Large (6"+)</option>
+                  <option>Sleeve / back piece</option>
+                </select>
+                <label for="size">Approximate size</label>
+              </div>
+              <div class="field field--full">
+                <input type="text" id="placement" name="placement" placeholder=" ">
+                <label for="placement">Placement (e.g. inner forearm)</label>
+              </div>
+              <div class="field field--full">
+                <textarea id="message" name="message" placeholder=" " required></textarea>
+                <label for="message">Describe your idea</label>
+                <span class="field__error">Tell us a little about your idea.</span>
+              </div>
+              <div class="field field--full">
+                <label class="dropzone" for="references">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+                  <strong>Add reference images</strong>
+                  <span>Drag &amp; drop or click to browse (JPG or PNG)</span>
+                  <input type="file" id="references" name="references" accept="image/*" multiple>
+                </label>
+                <ul class="file-list"></ul>
+              </div>
+              <div class="field field--full">
+                <label class="check">
+                  <input type="checkbox" id="age" name="age" required>
+                  <span>I confirm I am 18 or older and will bring a valid photo ID.</span>
+                </label>
+                <span class="field__error">You must be 18+ to be tattooed.</span>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
+            <button type="submit" class="btn btn--block" style="margin-top: 2rem;">Request Consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <p class="form-note">No payment needed now. We'll confirm details and deposit after your consult.</p>
           </form>
-          <div id="formMessage" class="form-message">
-            Thanks, we'll be in touch!
+
+          <div class="form-success" role="status">
+            <svg class="success-check" viewBox="0 0 84 84" aria-hidden="true"><circle cx="42" cy="42" r="40"/><path d="M27 43l10 10 20-22"/></svg>
+            <h2>Thanks, <em data-first-name>friend</em>!</h2>
+            <p>Your request is in. One of our artists will reach out within one business day to set up your consultation.</p>
+            <a href="gallery.html" class="link-arrow">Browse the gallery while you wait <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-content">
-        <p class="shop-name">Black Rose Tattoo</p>
-        <p>Demo website - not a real business</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Black Rose Tattoo home">
+            <span class="logo__mark">Black <span>Rose</span></span>
+            <span class="logo__sub">Tattoo Studio</span>
+          </a>
+          <p>Custom tattoos designed around your story, in a private, appointment-first studio in the heart of Portland.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5H16l.5-3h-3V8.6c0-.9.3-1.6 1.6-1.6h1.6V4.3c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.2H7.5v3H10V21h3.5z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3c.3 2.2 1.6 3.7 3.9 3.9v3.1c-1.4.1-2.7-.3-3.9-1.1v6.2c0 3.6-2.8 5.9-5.9 5.9-3.4 0-5.9-2.6-5.9-5.8 0-3.6 3.1-6.3 6.9-5.7v3.2c-1.7-.4-3.6.6-3.6 2.5 0 1.5 1.2 2.6 2.6 2.6 1.6 0 2.6-1.2 2.6-2.9V3h3.3z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="contact.html#book">Book a Consult</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li><span>Tue – Sat</span>11am – 7pm</li>
+            <li><span>Sun – Mon</span>Closed</li>
+            <li><span>Walk-ins</span>Welcome</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <ul>
+            <li>123 Ink Street<br>Portland, OR 97201</li>
+            <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+            <li><a href="mailto:hello@blackrosetattoo.com">hello@blackrosetattoo.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-wordmark" aria-hidden="true">Black Rose</div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Black Rose Tattoo. All rights reserved.</p>
+        <p>Demo website &mdash; not a real business</p>
       </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      document.getElementById('contactForm').style.display = 'none';
-      document.getElementById('formMessage').classList.add('show');
-    });
-  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>

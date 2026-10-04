@@ -3,59 +3,203 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Black Rose Tattoo | Artists</title>
+  <title>Artists | Black Rose Tattoo</title>
+  <meta name="description" content="Meet the resident artists at Black Rose Tattoo in Portland: Alex Carter (realism & portrait), Jamie Rivera (fine line & floral) and Ryan Cole (traditional & Japanese).">
+  <meta name="theme-color" content="#0b0809">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Black Rose Tattoo">
+  <meta property="og:title" content="Artists | Black Rose Tattoo">
+  <meta property="og:description" content="Meet the resident artists at Black Rose Tattoo in Portland: Alex Carter (realism & portrait), Jamie Rivera (fine line & floral) and Ryan Cole (traditional & Japanese).">
+  <meta property="og:image" content="hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
+  <script>document.documentElement.classList.add('js');</script>
+</head><body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
     <div class="container">
-      <nav>
-        <div class="logo">Black <span>Rose</span> Tattoo</div>
+      <a href="index.html" class="logo" aria-label="Black Rose Tattoo home">
+        <span class="logo__mark">Black <span>Rose</span></span>
+        <span class="logo__sub">Tattoo Studio</span>
+      </a>
+      <nav class="nav" aria-label="Main">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="artists.html">Artists</a></li>
+          <li><a href="artists.html" aria-current="page">Artists</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <a href="contact.html#book" class="btn btn--sm">Book Now</a>
       </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html">Home <small>01</small></a></li>
+        <li><a href="gallery.html">Gallery <small>02</small></a></li>
+        <li><a href="artists.html" aria-current="page">Artists <small>03</small></a></li>
+        <li><a href="contact.html">Contact <small>04</small></a></li>
+      </ul>
+      <div class="mobile-menu__footer">
+        <a href="contact.html#book" class="btn btn--block">Book a Consultation</a>
+        <p>123 Ink Street, Portland, OR &nbsp;·&nbsp; <a href="tel:+15551234567">(555) 123-4567</a></p>
+      </div>
     </div>
   </header>
 
-  <main class="page-content">
-    <div class="container">
-      <section>
-        <h2>Meet Our Artists</h2>
-        <div class="artists-grid">
-          <div class="artist-card">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&h=400&fit=crop" alt="Artist Alex Carter" class="artist-photo">
-            <h3 class="artist-name">Alex Carter</h3>
-            <p class="artist-specialty">Specialty: Realism & Portrait</p>
-            <p class="artist-bio">Alex has been tattooing for over 8 years, with a passion for bringing faces and detailed scenes to life on skin. He believes every tattoo should capture the essence of its subject.</p>
+  <main id="main">
+    <section class="page-banner">
+      <div class="page-banner__media">
+        <picture>
+          <source srcset="hero.webp" type="image/webp">
+          <img src="hero.png" alt="" width="1746" height="901" style="object-position: 20% 30%;">
+        </picture>
+      </div>
+      <div class="container">
+        <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Artists</span>
+        </nav>
+        <h1 class="reveal" style="--d:.08s">Meet the <em>artists</em></h1>
+        <p class="reveal" style="--d:.16s">Three distinct styles, one shared obsession with craft. Find the artist whose work speaks to you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="artist-row" id="alex">
+          <div class="artist-row__media reveal">
+            <span class="artist-row__index" aria-hidden="true">01</span>
+            <div class="artist-card__media"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&h=400&fit=crop" alt="Artist Alex Carter" loading="lazy"></div>
           </div>
-          <div class="artist-card">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&h=400&fit=crop" alt="Artist Jamie Rivera" class="artist-photo">
-            <h3 class="artist-name">Jamie Rivera</h3>
-            <p class="artist-specialty">Specialty: Fine Line & Floral</p>
-            <p class="artist-bio">Jamie specializes in delicate, intricate designs that flow with the body's natural lines. Her floral work is renowned for its elegance and attention to detail.</p>
+          <div>
+            <p class="artist-row__role reveal">Realism &amp; Portrait &nbsp;&middot;&nbsp; 8+ years</p>
+            <h2 class="reveal" style="--d:.06s">Alex Carter</h2>
+            <p class="artist-row__bio reveal" style="--d:.12s">Alex has been tattooing for over 8 years, with a passion for bringing faces and detailed scenes to life on skin. He believes every tattoo should capture the essence of its subject.</p>
+            <div class="tags reveal" style="--d:.16s"><span class="tag">Realism</span><span class="tag">Portrait</span><span class="tag">Black &amp; Grey</span></div>
+            <div class="reveal" style="--d:.2s">
+              <span class="artist-row__label">Recent work</span>
+              <div class="artist-row__work"><img src="realismtattoo.png" alt="Black and grey realism tattoo of a lion on the forearm" loading="lazy" style="object-position: center;"><img src="portraittattoo.png" alt="Color portrait tattoo of a young child surrounded by blue waves" loading="lazy" style="object-position: center;"></div>
+            </div>
+            <div class="artist-row__actions reveal" style="--d:.24s">
+              <a href="contact.html?artist=alex#book" class="btn">Book with Alex <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a href="#" class="link-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @alex.blackrose</a>
+            </div>
           </div>
-          <div class="artist-card">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&h=400&fit=crop" alt="Artist Ryan Cole" class="artist-photo">
-            <h3 class="artist-name">Ryan Cole</h3>
-            <p class="artist-specialty">Specialty: Traditional & Japanese</p>
-            <p class="artist-bio">Ryan brings bold, timeless designs to life with a modern twist. His traditional American and Japanese pieces are characterized by strong lines and vibrant colors.</p>
+        </article>
+        <article class="artist-row" id="jamie">
+          <div class="artist-row__media reveal">
+            <span class="artist-row__index" aria-hidden="true">02</span>
+            <div class="artist-card__media"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&h=400&fit=crop" alt="Artist Jamie Rivera" loading="lazy"></div>
           </div>
+          <div>
+            <p class="artist-row__role reveal">Fine Line &amp; Floral &nbsp;&middot;&nbsp; 6+ years</p>
+            <h2 class="reveal" style="--d:.06s">Jamie Rivera</h2>
+            <p class="artist-row__bio reveal" style="--d:.12s">Jamie specializes in delicate, intricate designs that flow with the body's natural lines. Her floral work is renowned for its elegance and attention to detail.</p>
+            <div class="tags reveal" style="--d:.16s"><span class="tag">Fine Line</span><span class="tag">Floral</span><span class="tag">Watercolor</span></div>
+            <div class="reveal" style="--d:.2s">
+              <span class="artist-row__label">Recent work</span>
+              <div class="artist-row__work"><img src="finelinetattoo.png" alt="Fine line tattoo of flowers and butterflies trailing up the forearm" loading="lazy" style="object-position: center;"><img src="floraltattoo.png" alt="Fine line floral bouquet tied with a ribbon on the arm" loading="lazy" style="object-position: center;"><img src="watercolortattoo.png" alt="Watercolor tattoo of a mushroom and crown with paint-splash color on the forearm" loading="lazy" style="object-position: center;"></div>
+            </div>
+            <div class="artist-row__actions reveal" style="--d:.24s">
+              <a href="contact.html?artist=jamie#book" class="btn">Book with Jamie <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a href="#" class="link-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @jamie.blackrose</a>
+            </div>
+          </div>
+        </article>
+        <article class="artist-row" id="ryan">
+          <div class="artist-row__media reveal">
+            <span class="artist-row__index" aria-hidden="true">03</span>
+            <div class="artist-card__media"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&h=400&fit=crop" alt="Artist Ryan Cole" loading="lazy"></div>
+          </div>
+          <div>
+            <p class="artist-row__role reveal">Traditional &amp; Japanese &nbsp;&middot;&nbsp; 10+ years</p>
+            <h2 class="reveal" style="--d:.06s">Ryan Cole</h2>
+            <p class="artist-row__bio reveal" style="--d:.12s">Ryan brings bold, timeless designs to life with a modern twist. His traditional American and Japanese pieces are characterized by strong lines and vibrant colors.</p>
+            <div class="tags reveal" style="--d:.16s"><span class="tag">Traditional</span><span class="tag">Japanese</span><span class="tag">Blackwork</span></div>
+            <div class="reveal" style="--d:.2s">
+              <span class="artist-row__label">Recent work</span>
+              <div class="artist-row__work"><img src="traditionaltattoo.png" alt="Neo-traditional tattoo of a woman framed by orange peonies on the upper arm" loading="lazy" style="object-position: center;"><img src="japanesetattoo.png" alt="Japanese-style black and grey tattoo of a pagoda beneath a rising sun" loading="lazy" style="object-position: center;"><img src="blackworktattoo.png" alt="Full back blackwork tattoo of a bold ornamental creature" loading="lazy" style="object-position: top;"></div>
+            </div>
+            <div class="artist-row__actions reveal" style="--d:.24s">
+              <a href="contact.html?artist=ryan#book" class="btn">Book with Ryan <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a href="#" class="link-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @ryan.blackrose</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <span class="eyebrow reveal">Now booking</span>
+        <h2 class="reveal" style="--d:.08s">Ready to start your <em>next piece?</em></h2>
+        <p class="reveal" style="--d:.16s">Tell us your idea. We'll pair you with the right artist and set up a free consultation.</p>
+        <div class="cta-band__actions reveal" style="--d:.24s">
+          <a href="contact.html#book" class="btn">Book a Consultation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="tel:+15551234567" class="btn btn--ghost">Call (555) 123-4567</a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-content">
-        <p class="shop-name">Black Rose Tattoo</p>
-        <p>Demo website - not a real business</p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Black Rose Tattoo home">
+            <span class="logo__mark">Black <span>Rose</span></span>
+            <span class="logo__sub">Tattoo Studio</span>
+          </a>
+          <p>Custom tattoos designed around your story, in a private, appointment-first studio in the heart of Portland.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5H16l.5-3h-3V8.6c0-.9.3-1.6 1.6-1.6h1.6V4.3c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.2H7.5v3H10V21h3.5z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3c.3 2.2 1.6 3.7 3.9 3.9v3.1c-1.4.1-2.7-.3-3.9-1.1v6.2c0 3.6-2.8 5.9-5.9 5.9-3.4 0-5.9-2.6-5.9-5.8 0-3.6 3.1-6.3 6.9-5.7v3.2c-1.7-.4-3.6.6-3.6 2.5 0 1.5 1.2 2.6 2.6 2.6 1.6 0 2.6-1.2 2.6-2.9V3h3.3z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="contact.html#book">Book a Consult</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li><span>Tue – Sat</span>11am – 7pm</li>
+            <li><span>Sun – Mon</span>Closed</li>
+            <li><span>Walk-ins</span>Welcome</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <ul>
+            <li>123 Ink Street<br>Portland, OR 97201</li>
+            <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+            <li><a href="mailto:hello@blackrosetattoo.com">hello@blackrosetattoo.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-wordmark" aria-hidden="true">Black Rose</div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Black Rose Tattoo. All rights reserved.</p>
+        <p>Demo website &mdash; not a real business</p>
       </div>
     </div>
   </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
