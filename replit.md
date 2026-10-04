@@ -7,8 +7,11 @@ Replit workflow named **Start application**. It serves the project files on port
 The workflow command is:
 
 ```sh
-python3 -m http.server 5000 --bind 0.0.0.0
+python3 serve.py
 ```
+
+`serve.py` is a tiny static server (port 5000) that sends `Cache-Control: no-cache`,
+so browsers always pick up the latest CSS and JavaScript after a refresh.
 
 The other pages are `gallery.html`, `artists.html`, and `contact.html`.
 
